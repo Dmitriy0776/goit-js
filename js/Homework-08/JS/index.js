@@ -39,7 +39,6 @@ function clickImage(e) {
   const elem = e.target;
   lightboxImage.src = e.target.dataset.source;
   lightbox.classList.toggle("is-open");
-  console.log(elem);
 }
 
 lightbox.addEventListener("click", clicklightbox);
