@@ -30,7 +30,7 @@ while(true) {
         continue;
     }
     
-    if (inputNumber === null) {
+    if (inputNumber === null) { 
         alert(total);
         break;
     }
