@@ -2,8 +2,7 @@ import './styles.css';
 import getGeoPosition from './getGeoPosition';
 import fetchWeather from './fetchWeather';
 import PNotify from 'pnotify/dist/es/PNotify';
-const button = document.querySelector('[type="button"]');
-const input = document.querySelector('[type="text"]');
+const form = document.querySelector('form');
 
 function getWeathcer(query) {
   fetchWeather(query).then(data => {
@@ -32,11 +31,10 @@ function getWeathcer(query) {
   });
 }
 
-button.onclick = function() {
-  if (button.onclick) {
-    getWeathcer(input.value);
-  }
-};
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  getWeathcer(e.currentTarget.elements.city.value);
+})
 
 getGeoPosition()
   .then(location => {
