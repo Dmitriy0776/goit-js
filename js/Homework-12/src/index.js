@@ -11,8 +11,6 @@ function getWeathcer(query) {
   setTimeout(
     () =>
       fetchWeather(query).then(data => {
-        console.log('data', data);
-        console.log(data.location.name);
         document.querySelector('[class="icon"]').src =
           data.current.condition.icon;
         document.querySelector('[class="icon"]').alt =
