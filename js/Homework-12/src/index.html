@@ -13,35 +13,45 @@
   </head>
 
   <body>
-    <form class="search-form" id="search-form">
-      <input type="text" name="city" placeholder="Enter city name..." />
-      <button type="submit">Get weather</button>
-    </form>
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <input
+          class="inputText"
+          type="text"
+          name="city"
+          placeholder="Enter city name..."
+        />
+        <button class="butSub" type="submit">Get weather</button>
+      </form>
+      <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+      <section class="weather is-hidden" id="weather">
+        <h2>Current weather</h2>
+        <img
+          class="icon"
+          src="https://cdn.apixu.com/weather/64x64/day/113.png"
+          alt="Sunny"
+        />
 
-    <section class="weather is-hidden" id="weather">
-      <h2>Current weather</h2>
-      <img
-        class="icon"
-        src="https://cdn.apixu.com/weather/64x64/day/113.png"
-        alt="Sunny"
-      />
+        <p>Location: <span class="weatText" data-field="location">Харьков</span></p>
+        <p>Temperature: <span class="weatText" data-field="temp">20&#8451;</span></p>
+        <p>Humidity: <span class="weatText" data-field="humidity">65%</span></p>
+        <p>Wind: <span class="weatText" data-field="wind">3kph</span></p>
+        <p>Conditions: <span class="weatText" data-field="conditions">Sunny</span></p>
+      </section>
 
-      <p>Location: <span data-field="location">Харьков</span></p>
-      <p>Temperature: <span data-field="temp">20&#8451;</span></p>
-      <p>Humidity: <span data-field="humidity">65%</span></p>
-      <p>Wind: <span data-field="wind">3kph</span></p>
-      <p>Conditions: <span data-field="conditions">Sunny</span></p>
-    </section>
-
-    <p class="credit">
-      Powered by
-      <a
-        href="https://www.apixu.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="Weather API"
-        >Apixu.com</a
-      >
-    </p>
+      <p class="credit">
+        Powered by
+        <a
+          href="https://www.apixu.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Weather API"
+          >Apixu.com</a
+        >
+      </p>
+    </div>
   </body>
 </html>
