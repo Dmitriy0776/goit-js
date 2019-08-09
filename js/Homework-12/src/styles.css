@@ -60,7 +60,7 @@ body {
   height: 50px;
   position: absolute;
   text-align: center;
-  left: 50%;
+  left: 47%;
   visibility: hidden;
   -webkit-animation: sk-rotate 2.0s infinite linear;
   animation: sk-rotate 2.0s infinite linear;
