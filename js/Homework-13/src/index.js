@@ -41,33 +41,6 @@ function loadMoreBtnHandler() {
   });
 }
 
-//=====//
-
-
-// var listElm = document.querySelector('#infinite-list');
-
-// Add 20 items.
-// const nextItem = 1;
-// const loadMore = function() {
-//   for (let i = 0; i < 12; i++) {
-//     const item = document.createElement('li');
-//     item.innerText = 'Item ' + nextItem++;
-//     galleryPhoto.appendChild(item);
-//   }
-// }
-
-// // Detect when scrolled to bottom.
-// galleryPhoto.addEventListener('scroll', function() {
-//   if (galleryPhoto.scrollTop + galleryPhoto.clientHeight >= galleryPhoto.scrollHeight) {
-//     loadMore();
-//   }
-// });
-
-// // Initially load some items.
-// loadMore();
-
-//======//
-
 
 function photoListItems(items) {
   refs.galleryPhoto.insertAdjacentHTML("beforeend",items);
